@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+#main-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#logo-wrapper {
+    background: url(./images/kiruba-anand-wtAb3-8yeP4-unsplash.jpg);
+    height: 100vh;
+    min-width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner {
+    display: flex;
+    border: 1px solid black;
+    opacity: 0.2;
+}
+
+#content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#content {
+    padding: 1vh 5vw;
+    background-color: #C6CEC7;
+}
+
+#main-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#login {
+    background-color: #C6CEC7;
+}
