@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cabin+Sketch&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <script defer src="./jsfile.js"></script>
     <title>Sign Up Page!</title>
@@ -11,11 +14,18 @@
 <body>
     <div id="main-wrapper">
         <div id="logo-wrapper">
-            <div id="banner">
-                <img id="logo" src="./images/odin-lined.png">
-                <div id="logo-text">EGO</div>
+            <div id="banner-wrapper">
+                <div id="banner">
+                    <img id="logo" src="./images/odin-lined.png">
+                    <div id="logo-text">EGO</div>
+                </div>
+            </div>
+            <div id="photo-dead-space"></div>
+            <div id="photo-footer">
+                <p>Photo by <a href="https://unsplash.com/@demuurbloem?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">iva</a> on <a href="https://unsplash.com/">Unsplash</a></p>
             </div>
         </div>
+        
         <div id="content-wrapper">
             <div id="content">
                 <p>Here at Ego, we know you! We know what you want,
@@ -25,31 +35,37 @@
                 <p>You <em>know</em> its for you.</p>
             </div>
             <div id="form-wrapper">
+                <h1 id="form-header">Let's do this!</h1>
                 <fieldset id="main-form">
-                    <legend>Let's get started!</legend>
-
-                    <label for="first_name">First name</label>
-                    <input type="text" id="first-name" name="first_name">
-                    
-                    <label for="last_name">Last name</label>
-                    <input type="text" id="last-name" name="last_name">
-
-                    <label for="email">email</label>
-                    <input type="email" id="email-input" name="email">
-
-                    <label for="phone_number">Phone number</label>
-                    <input type="number" id="phone-number" name="phone_number">
-
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password">
-
-                    <label for="confirm_password">Confirm password</label>
-                    <input type="password" id="confirm-password" name="confirm_password">
+                    <div>
+                        <label for="first_name">FIRST NAME</label>
+                        <input required minlength="2" maxlength="20" placeholder="John" type="text" id="first-name" name="first_name">
+                    </div>
+                    <div>
+                        <label for="last_name">LAST NAME</label>
+                        <input required minlength="2" maxlength="20" placeholder="Doe" type="text" id="last-name" name="last_name">
+                    </div>
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input required placeholder="johndoe@gmail.com" type="email" id="email-input" name="email">
+                    </div>
+                    <div>
+                        <label for="phone_number">PHONE NUMBER</label>
+                        <input required placeholder="(123)-555-6789" type="text" id="phone-number" name="phone_number">
+                    </div>
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input required type="password" id="password" name="password">
+                    </div>
+                    <div>
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                        <input required type="password" id="confirm-password" name="confirm_password">
+                    </div>
                 </fieldset>
             </div>
             <div id="login">
-                <button type="submit">Create Account!</button>
-                <p>Already have an account? <a href="">Log in</a></p>
+                <button type="submit" id="submit-btn">Create Account!</button>
+                <p id="login-text">Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
     </div>
